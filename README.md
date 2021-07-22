@@ -5,6 +5,7 @@
 ## 📋 스터디 계획
 
 - **인원** : 5 ~ 6명
+    - **참여자** : [위연주](https://github.com/Julia-we-s2), [채연희](https://github.com/hing9u), [백승윤](https://github.com/YoonBaek)
 - **문제 수준** : SW역량테스트 IM 등급 / 백준 Silver
     - **진도** : 일일 2~3 문제 목표로 풀이 후 난이도 상승에 따라 조정.
 - **모임 요일 및 시간** : 평일(목?) + 주말(일?) / 시간 : ??

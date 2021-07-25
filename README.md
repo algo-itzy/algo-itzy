@@ -1,19 +1,17 @@
 # 알고있지! (Algo-Itzy)
 
-
-
 ## 📋 스터디 계획
 
-- **인원** : 5 ~ 6명
-    - **참여자** : [위연주](https://github.com/Julia-we-s2), [채연희](https://github.com/hing9u), [백승윤](https://github.com/YoonBaek), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)
-- **문제 수준** : SW역량테스트 IM 등급 / 백준 Silver
-    - **진도** : 일일 2~3 문제 목표로 풀이 후 난이도 상승에 따라 조정.
-- **모임 요일 및 시간** : 평일(목?) + 주말(일?) / 시간 : ??
-- **코드 리뷰 및 버전 관리 :** Git
-- **기타 소통 및 모임** : [Discord](https://discord.gg/CTNYwBW8)
-- **문제 공유** : [Notion](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09)
+- **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/hing9u), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무)
+- **문제 수준 :** 백준100제 + 기초 1 → 기초 2
+- **모임 요일 및 시간** : 목요일 20시 / 일요일 12시 (2시간 / 유동적)
+- 문제는 다음날 **오전 9시 전**까지 업로드
 
-
+- **소통 채널**
+    - **카카오톡** : 카카오페이 / 긴급 공지 및 연락
+    - [**디스코드**](https://discord.gg/CTNYwBW8) : 주 소통 채널
+    - **깃허브** : 코드 업로드
+    - [**노션**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리/ 벌금 내역 관리
 
 ## 📜 Convention
 
@@ -22,50 +20,121 @@
 - 코드마다 주석 달기
 - 변수와 함수 이름은 어떤 역할을 하는지 알 수 있도록 붙이기
 
+
+
+</br>
+
 ### 2. **Commit Convention**
 
 - 한번에 `git add .` 하는 것보다 commit type에 맞게 분리하기
+- 제목 첫 글자는 `대문자` ex: `fix: Change input() to readline()`
 
-    ```
-    📚 DOCS: README.md 등 문서 작성 및 수정
-    🚀 ADD: 알고리즘 코드 업로드
-    🔧 FIX: 알고리즘 코드 수정
-    📦 MERGE: request 합치기
-    
-    --------------------------------------------------------------------------
-    
-    $ git commit -m "🚀 ADD : 날짜 자기이름 문제플랫폼 문제번호 문제유형 문제이름"
-    $ git commit -m "🔧 FIX : 문제플랫폼 문제번호 문제유형 문제이름"
-    
-    (예시)
-    $ git add answer.py
-    $ git commit -m "🚀 ADD : 210722 yoonbaek boj 10972 bruteforce 에라스토스의 체"
-    $ git commit -m "🔧 FIX : boj 2572 queue 요세푸스문제0"
-    ```
+```
+- code  : 코드를 제출할 때
+- fix   : 코드를 수정할 때 (틀린 문제를 맞게 만들었을 때)
+- docs  : README를 수정했을 때
+- refac : 맞은 문제를 개선했을 때
+- chore : 그 외 자잘한 수정(디렉토리 추가..)
+
+--------------------------------------------------------------------------
+
+$ git add 10094-에라스토스의 체-kimssafy.py
+$ git commit -m "code: Solve 문제플랫폼 문제번호 문제이름 (작성자)"
+$ git commit -m "fix: 뭐했는지 (작성자)"
+
+예시
+$ git commit -m "code: Solve boj 10972 에라스토스의 체 (소석진)"
+```
+
+- 일단 각자 푸쉬 ⭐**push 전에 pull 필수!!!**⭐
 
 
+
+</br>
+
+### 3. Github 폴더
+
+```
+ss6-algorithm-study/algo-itzy
+├──BOJ
+│   ├──0-1 bfs(너비 우선 탐색)	
+│   ├──arbitrary precision / big integers (임의 정밀도 / 큰 수 연산)	
+│   ├──area of a polygon (다각형의 넓이)	
+│   ├──arithmetic (사칙연산)	
+│   ├──backtracking (백트래킹)	
+│   ├──bellman–ford (벨만–포드)	
+│   ├──binary search (이분 탐색)	
+│   ├──breath first search (너비 우선 탐색)	
+│   ├──bruteforcing (브루트포스 알고리즘)	
+│   ├──combinatorics (조합론)	
+│   ├──data structure (자료 구조)	
+│   ├──depth first search (깊이 우선 탐색)	
+│   ├──dijkstra's (다익스트라)	
+│   ├──divide and conquer (분할 정복)	
+│   ├──dynamic programming (다이나믹 프로그래밍)
+│   │   ├──01003_피보나치_함수
+│   │   │   ├──각자id.py
+│   │   │   ├── ...
+│   │   │   └── README.md
+│   │   └──09461_파도반_수열
+│   │       ├──각자id.py
+│   │       ├── ...
+│   │       └── README.md
+│   ├──exponentiation by squaring (분할 정복을 이용한 거듭제곱)	
+│   ├──floyd–warshall (플로이드–와샬)	
+│   ├──geometry (기하학)	
+│   ├──graph theory (그래프 이론)	
+│   ├──graph traversal (그래프 탐색)	
+│   ├──greedy (그리디 알고리즘)	
+│   ├──implementation (구현)	
+│   ├──knapsack (배낭 문제)	
+│   ├──mathematics (수학)	
+│   ├──number theory (정수론)	
+│   ├──prefix sum (누적 합)	
+│   ├──primality test (소수 판정)	
+│   ├──priority queue (우선순위 큐)	
+│   ├──queue (큐)	
+│   ├──recursion (재귀)	
+│   ├──set / map by hashing (해시를 사용한 집합과 맵)	
+│   ├──set / map by trees (트리를 사용한 집합과 맵)	
+│   ├──sieve of eratosthenes (에라토스테네스의 체)	
+│   ├──sorting (정렬)	
+│   ├──stack (스택)	
+│   ├──string (문자열)	
+│   ├──topological sorting (위상 정렬)	
+│   ├──tree (트리)	
+│   ├──two-pointer (투 포인터)	
+│   └──value / coordinate compression (값 / 좌표 압축)
+├──SWEA
+├──Programmers
+└──README.md
+```
+
+
+
+</br>
 
 ## 🙆 **참가자들 알고리즘 경험도**
 
-- @위연주  : 프로그래머스 문제 유형별 1, 2 푸셨었음
+- @위연주  : 프로그래머스 문제 유형별 1, 2 푸셨었음. 파이썬 잘 모름 열심히 할게요😭
 - @채연희  : 백준 단계 초반 30제 + 해커랭크 easy ~ medium
 - @백승윤  : 거의 백준만. 파이썬 경험 적음. BOJ S2 (Golang)
+- @김승규  : 백준 실버 초급 단계정도
+- @소석진  : 백준 골드3
+- @정지웅  : 경험 없습니다 열심히 해볼게요
 
 
+
+</br>
 
 ## 💰 스터디 효율성을 위한 벌금
 
-    ~~(사채업자 아니에요 우리의 실력 향상을 위한 조치입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다~~
+    ~~(사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다~~
 
-- 스터디 결석 시 : 6,000원?
-- 스터디 지각 시 : 4,000원?
-- 문제 안 풀었을 시 : 한 문제 당 2,000원?
-- 벌금 사용처 : 코로나 잠잠해지면 오프라인 회식 때 **FLEX**할 예정
+- 스터디 결석 시 : 6,000원
+    - 사유 결석 : 누가 들어도 합당한 사유 — 면제
+- 스터디 정시 지각 시 : 4,000원
+- 문제 안 풀었을 시 (익일 오전 9시 전까지) : 한 문제 당 2,000원
+- 벌금 사용처 : 코로나 잠잠해지면 오프라인 회식 때 **FLEX**
 - 총무에게 다음날 낮 12시 전까지 카카오 페이로 입금 (제 시간 내에 미입금 시 추가 1,000원)
 - 벌금 내역 : Notion에서 관리
-
-
-
-## 레퍼런스
-
-[https://github.com/ssafy-algoga/algorithm-study](https://github.com/ssafy-algoga/algorithm-study)

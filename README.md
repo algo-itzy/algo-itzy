@@ -9,9 +9,9 @@
 
 - **소통 채널**
     - **카카오톡** : 카카오페이 / 긴급 공지 및 연락
-    - [**디스코드**](https://discord.gg/CTNYwBW8) : 주 소통 채널
-    - **깃허브** : 코드 업로드
-    - [**노션**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리/ 벌금 내역 관리
+    - [**Discord**](https://discord.gg/CTNYwBW8) : 주 소통 채널
+    - [**Github**](https://github.com/ss6-algorithm-study/algo-itzy) : 코드 업로드
+    - [**Notion**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리/ 벌금 내역 관리
 
 
 
@@ -33,6 +33,7 @@
 - 한번에 `git add .` 하는 것보다 commit type에 맞게 분리하기
 - 제목 첫 글자는 `대문자`
   - ex: `fix: Change input() to readline()`
+- 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_ `(underbar)
 
 ```
 - code  : 코드를 제출할 때
@@ -43,7 +44,7 @@
 
 --------------------------------------------------------------------------
 
-$ git add 10094-에라스토스의 체-kimssafy.py
+$ git add 10094-에라스토스의_체-kimssafy.py
 $ git commit -m "code: Solve 문제플랫폼 문제번호 문제이름 (작성자)"
 $ git commit -m "fix: 뭐했는지 (작성자)"
 

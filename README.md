@@ -33,7 +33,7 @@
 - 한번에 `git add .` 하는 것보다 commit type에 맞게 분리하기
 - 제목 첫 글자는 `대문자`
   - ex: `fix: Change input() to readline()`
-- 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_ `(underbar)
+- 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_` (underbar)
 
 ```
 - code  : 코드를 제출할 때
@@ -48,11 +48,12 @@ $ git add 10094-에라스토스의_체-kimssafy.py
 $ git commit -m "code: Solve 문제플랫폼 문제번호 문제이름 (작성자)"
 $ git commit -m "fix: 뭐했는지 (작성자)"
 
-예시
+(예시)
 $ git commit -m "code: Solve boj 10972 에라스토스의 체 (소석진)"
+$ git commit -m "fix: Change input() to readline()"
 ```
 
-- 일단 각자 푸쉬 ⭐ **push 전에 pull 필수!!!** ⭐
+- 일단 각자 푸쉬 → ⭐ **push 전에 pull 필수!!!** ⭐
 
 
 
@@ -135,7 +136,7 @@ ss6-algorithm-study/algo-itzy
 
 ## 💰 스터디 효율성을 위한 벌금
 
-    ~~(사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다~~
+    ~~사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다~~
 
 - 스터디 결석 시 : 6,000원
     - 사유 결석 : 누가 들어도 합당한 사유 — 면제

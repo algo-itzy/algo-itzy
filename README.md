@@ -3,7 +3,7 @@
 ## 📋 스터디 계획
 
 - **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/hing9u), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무)
-- **문제 수준 :** 백준100제 + 기초 1 → 기초 2
+- **문제 수준 :** 백준100제 → 기초 1 → 기초 2
 - **모임 요일 및 시간** : 목요일 20시 / 일요일 12시 (2시간 / 유동적)
 - 문제는 다음날 **오전 9시 전**까지 업로드
 
@@ -12,6 +12,10 @@
     - [**디스코드**](https://discord.gg/CTNYwBW8) : 주 소통 채널
     - **깃허브** : 코드 업로드
     - [**노션**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리/ 벌금 내역 관리
+
+
+
+<br/>
 
 ## 📜 Convention
 
@@ -27,7 +31,8 @@
 ### 2. **Commit Convention**
 
 - 한번에 `git add .` 하는 것보다 commit type에 맞게 분리하기
-- 제목 첫 글자는 `대문자` ex: `fix: Change input() to readline()`
+- 제목 첫 글자는 `대문자`
+  - ex: `fix: Change input() to readline()`
 
 ```
 - code  : 코드를 제출할 때
@@ -46,7 +51,7 @@ $ git commit -m "fix: 뭐했는지 (작성자)"
 $ git commit -m "code: Solve boj 10972 에라스토스의 체 (소석진)"
 ```
 
-- 일단 각자 푸쉬 ⭐**push 전에 pull 필수!!!**⭐
+- 일단 각자 푸쉬 ⭐ **push 전에 pull 필수!!!** ⭐
 
 
 

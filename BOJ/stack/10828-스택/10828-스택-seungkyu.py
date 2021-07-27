@@ -2,7 +2,6 @@
 # 스택 구조 => 파이썬 리스트 활용해서 구현 가능
 import sys
 N = int(sys.stdin.readline())
-# len함수는 O(n) 시간 복잡도를 가질 것 같아 size 변수를 만들어봄
 size = 0
 stack_list = []
 for _ in range(N):

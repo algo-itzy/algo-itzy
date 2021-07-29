@@ -75,6 +75,7 @@ ss6-algorithm-study/algo-itzy
 │   ├──bruteforcing (브루트포스 알고리즘)	
 │   ├──combinatorics (조합론)	
 │   ├──data_structure (자료 구조)	
+│   ├──deque (덱)	
 │   ├──dfs (깊이 우선 탐색)	
 │   ├──dijkstra (다익스트라)	
 │   ├──divide_and_conquer (분할 정복)	

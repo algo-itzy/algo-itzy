@@ -1,6 +1,7 @@
+while True:
+  num = input()
 
+  if num == '0':
+    break
 
-
-"""
-git commit -m "code: Solve boj 01259 펠린드롬수 (seokzin)"
-"""
+  print('yes' if num == num[::-1] else 'no')

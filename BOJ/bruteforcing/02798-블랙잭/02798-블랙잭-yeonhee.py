@@ -14,7 +14,3 @@ for i in range(N):
 
 print(result)
 
-
-"""
-git commit -m "code: Solve boj 02798 블랙잭 (yeonhee)"
-"""

@@ -1,6 +1,1 @@
-
-
-
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (yeonhee)"
-"""
+# delete this and solve here

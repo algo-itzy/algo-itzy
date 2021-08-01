@@ -7,7 +7,3 @@ gcd = max(factor1 & factor2)  # 최대공약수
 print(gcd)
 print(int(num1 * num2 / gcd))  # 최소공배수
 
-
-"""
-git commit -m "code: Solve boj 02609 최대공약수와 최소공배수 (yeonhee)"
-"""

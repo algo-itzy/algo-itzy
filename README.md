@@ -3,14 +3,20 @@
 ## 📋 스터디 계획
 
 - **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/hing9u), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무)
-- **문제 수준 :** 백준100제 → 기초 1 → 기초 2
+- **문제 수준** : solved.ac - 문제 - CLASS에서 모임 때마다 다음 문제 선정
+
 - **모임 요일 및 시간** : 목요일 20시 / 일요일 12시 (2시간 / 유동적)
-- 코드 제출은 다음날 **오전 9시 전**까지
+    - 파트 별 담당자 선정, 담당자가 파트 내 모든 코드 리뷰
+    - 새로운 개념 (알고리즘) 등장 시 간단한 설명 추가
+
+- 코드 제출은 모임 **1시간 전**까지
+    - [BOJ 그룹](https://www.acmicpc.net/group/11918) - 연습 : 스코어보드 업데이트 ⭐
 
 - **소통 채널**
     - [**Discord**](https://discord.gg/CTNYwBW8) : 주 소통 채널
-    - [**Github**](https://github.com/ss6-algorithm-study/algo-itzy) : 코드 업로드
-    - [**Notion**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리 / 벌금 내역 관리
+    - [**Github**](https://github.com/ss6-algorithm-study/algo-itzy) : 코드 업로드 및 버전 관리
+    - [**BOJ 그룹**](https://www.acmicpc.net/group/11918) : 문제 리스트 제공 및 코드 제출 - 스코어보드 기록
+    - [**Notion**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리 (카테고리 및 티어 참고) / 벌금 내역 관리
     - **카카오톡** : 카카오페이 / 긴급 공지 및 연락
 
 
@@ -137,7 +143,7 @@ ss6-algorithm-study/algo-itzy
 
 ## 💰 스터디 효율성을 위한 벌금
 
-    ~~사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다~~
+    ~~ 사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다 ~~
 
 - 스터디 결석 시 : 6,000원
     - 사유 결석 : 누가 들어도 합당한 사유 — 면제

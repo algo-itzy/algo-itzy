@@ -1,6 +1,14 @@
+# 오름차순 정렬 : 중복 X
 
+import sys
 
+n = int(sys.stdin.readline())
+nums = []
 
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (jiwoong)"
-"""
+for _ in range(n):
+    nums.append(int(sys.stdin.readline()))
+
+nums = sorted(nums)
+
+for i in range(len(nums)):
+    print(nums[i])

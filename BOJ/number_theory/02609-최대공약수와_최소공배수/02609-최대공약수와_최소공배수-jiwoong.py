@@ -1,6 +1,12 @@
+# 모듈
+from math import gcd
+
+a, b = map(int, input().split())
 
 
+def lcm(a, b):
+    return a * b // gcd(a, b)
 
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (jiwoong)"
-"""
+
+print(gcd(a, b))
+print(lcm(a, b))

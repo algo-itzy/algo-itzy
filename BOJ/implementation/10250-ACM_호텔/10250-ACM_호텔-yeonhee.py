@@ -8,7 +8,3 @@ for _ in range(int(input())):
     else:
         floor, unit = N % H, N//H + 1
     print (floor * 100 + unit)
-
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (yeonhee)"
-"""

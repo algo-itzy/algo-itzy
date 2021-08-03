@@ -1,6 +1,10 @@
+while True:
+    nums = list(map(int, input().split()))
+    if sum(nums) == 0:
+        break
 
-
-
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (jiwoong)"
-"""
+    nums.sort()
+    if nums[0] ** 2 + nums[1] ** 2 == nums[2] ** 2:
+        print('right')
+    else:
+        print('wrong')

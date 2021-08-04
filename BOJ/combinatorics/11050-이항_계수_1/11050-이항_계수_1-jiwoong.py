@@ -1,6 +1,5 @@
+from math import factorial
 
-
-
-"""
-git commit -m "code: Solve boj 00000 문제 이름 (jiwoong)"
-"""
+n, k = map(int, input().split())
+ans = factorial(n) // (factorial(k) * factorial(n - k))  # 이항계수 factorial 공식 적용
+print(ans)

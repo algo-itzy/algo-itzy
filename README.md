@@ -1,5 +1,7 @@
 # 알고있지! (Algo-Itzy)
 
+<br>
+
 ## 📋 스터디 계획
 
 - **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/hing9u), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무), [한승주](https://github.com/chaselover)
@@ -21,7 +23,7 @@
 
 
 
-<br/>
+<br>
 
 ## 📜 Convention
 
@@ -32,11 +34,13 @@
 
 
 
-</br>
+<br>
 
 ### 2. **Commit Convention**
 
-- 한번에 `git add .` 하는 것보다 commit type에 맞게 분리하기
+- **commit 분리하기**
+  - 한번에 `git add .`를 지양합니다.
+  - 문제별, 타입별로 commit을 분리해서 작성합니다.
 - 제목 첫 글자는 `대문자`
   - ex: `fix: Change input() to readline()`
 - 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_` (underbar)
@@ -63,9 +67,11 @@ $ git commit -m "fix: Change input() to readline()"
 
 
 
-</br>
+<br>
 
 ### 3. Github 폴더
+
+![image](https://user-images.githubusercontent.com/87457066/128278963-21470384-3c70-450d-936c-5b3e34723f78.png)
 
 ```
 ss6-algorithm-study/algo-itzy
@@ -86,12 +92,12 @@ ss6-algorithm-study/algo-itzy
 │   ├──dijkstra (다익스트라)	
 │   ├──divide_and_conquer (분할 정복)	
 │   ├──dp (다이나믹 프로그래밍)
-│   │   ├──01003_피보나치_함수
-│   │   │   ├──각자id.py
+│   │   ├──01003-피보나치_함수
+│   │   │   ├──01003-피보나치_함수-각자id.py
 │   │   │   ├── ...
 │   │   │   └── README.md
-│   │   └──09461_파도반_수열
-│   │       ├──각자id.py
+│   │   └──09461-파도반_수열
+│   │       ├──09461-파도반_수열-각자id.py
 │   │       ├── ...
 │   │       └── README.md
 │   ├──exponentiation_by_squaring (분할 정복을 이용한 거듭제곱)	
@@ -126,21 +132,21 @@ ss6-algorithm-study/algo-itzy
 
 
 
-</br>
+<br>
 
 ## 🙆 **참가자들 알고리즘 경험도**
 
-- @위연주  : 프로그래머스 문제 유형별 1, 2 푸셨었음. 파이썬 잘 모름 열심히 할게요😭
-- @채연희  : 백준 단계 초반 30제 + 해커랭크 easy ~ medium
-- @백승윤  : 거의 백준만. 파이썬 경험 적음. BOJ S2 (Golang)
-- @김승규  : 백준 실버 초급 단계정도
-- @소석진  : 백준 골드3
-- @정지웅  : 경험 없습니다 열심히 해볼게요
-- @한승주  : 백준 플래티넘 ㄷㄷ
+- [위연주](https://github.com/Julia-we-s2)  : 프로그래머스 문제 유형별 1, 2 푸셨었음. 파이썬 잘 모름 열심히 할게요😭
+- [채연희](https://github.com/hing9u)  : 백준 단계 초반 30제 + 해커랭크 easy ~ medium
+- [백승윤](https://github.com/YoonBaek)  : 거의 백준만. 파이썬 경험 적음. BOJ S2 (Golang)
+- [김승규](https://github.com/ed-kyu)  : 백준 실버 초급 단계정도
+- [소석진](https://github.com/seokzin)  : 백준 골드3
+- [정지웅](https://github.com/JiWoongJeong)  : 경험 없습니다 열심히 해볼게요
+- [한승주](https://github.com/chaselover)  : 백준 플래티넘 ㄷㄷ
 
 
 
-</br>
+<br>
 
 ## 💰 스터디 효율성을 위한 벌금
 
@@ -150,6 +156,9 @@ ss6-algorithm-study/algo-itzy
     - 사유 결석 : 누가 들어도 합당한 사유 — 면제
 - 스터디 정시 지각 시 : 4,000원
 - 문제 안 풀었을 시 (익일 오전 9시 전까지) : 한 문제 당 2,000원
+
+<br>
+
 - 벌금 사용처 : 코로나 잠잠해지면 오프라인 회식 때 **FLEX**
 - 총무에게 다음날 낮 12시 전까지 카카오 페이로 입금 (제 시간 내에 미입금 시 추가 1,000원)
 - 벌금 내역 : Notion에서 관리

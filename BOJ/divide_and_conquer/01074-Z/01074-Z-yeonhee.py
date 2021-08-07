@@ -7,7 +7,7 @@ def Z(N, r, c):
     # base case
     if N == 1:
         return base[r][c]
-    # recursion case
+    # recursive case
     return 4 * Z(N-1, r//2, c//2) + Z(1, r%2, c%2)
 
 N, r, c = map(int, input().split())
@@ -29,5 +29,9 @@ N = 2일때는 출력값이 다음과 같습니다.
 4**(N-1) * base[r//2][c//2] + base[r%2][c%2]
 ---------------------------   --------------
   기준값 (각 유닛의 0행 0열의 값)         상세값
+
+이 출력값에서 아이디어를 얻어, recursive case는 다음과 같이 표현했습니다.
+
+4 * Z(N-1, r//2, c//2) + Z(1, r%2, c%2)
 
 """

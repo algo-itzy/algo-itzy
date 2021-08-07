@@ -6,13 +6,10 @@ def dfs(x, y):
     dy = [1, -1, 0, 0]
 
     for i in range(4):
-        nx, ny = x + dx[i], y + dy[i]
+        nx, ny = x+dx[i], y+dy[i]
 
-        if nx >= m or nx < 0 or ny >= n or ny < 0:
-            continue
-
-        if graph[ny][nx] == 1:
-            graph[ny][nx] = 0  # 방문 지점은 0으로 만든다.
+        if 0<=nx<m and 0<=ny<n and graph[ny][nx]:
+            graph[ny][nx] = 0
             dfs(nx, ny)
 
 t = int(input())
@@ -21,7 +18,7 @@ for _ in range(t):
     m, n, k = map(int, input().split())
 
     cnt = 0
-    graph = [[0] * m for _ in range(n)]
+    graph = [[0]*m for _ in range(n)]
 
     for _ in range(k):
         x, y = map(int, input().split())

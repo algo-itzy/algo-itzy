@@ -1,4 +1,4 @@
-# 알고있지! (Algo-Itzy)
+![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=Algo%-Itzy&desc=Algorithms%20Study%20Group!&fontSize=90&descAlign=57&descAlignY=70&&animation=twinkling)
 
 <br>
 

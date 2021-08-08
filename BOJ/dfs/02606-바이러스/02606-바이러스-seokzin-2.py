@@ -1,17 +1,9 @@
-from collections import deque
+def dfs(n):
+    if not visit[n]:
+        visit[n] = 1
 
-def bfs(n):
-    q = deque()
-    q.append(n)
-
-    while q:
-        x = q.popleft()
-
-        if not visit[x]:
-            visit[x] = 1
-
-            for nx in graph[x]:
-                q.append(nx)
+        for nx in graph[n]:
+            dfs(nx)
 
 n = int(input())
 k = int(input())
@@ -24,6 +16,6 @@ for _ in range(k):
     graph[a].append(b)
     graph[b].append(a)
 
-bfs(1)
+dfs(1)
 
 print(sum(visit)-1)  # 1번 컴퓨터 제외

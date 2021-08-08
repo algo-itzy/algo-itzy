@@ -27,13 +27,13 @@ def dfs(x, y, m, n, vegetable_list):
     dir_x = [1, -1, 0, 0]
     dir_y = [0, 0, 1, -1]
     for i in range(4): 
-        x = x + dir_x[i]
-        y = y + dir_y[i]
+        posx = x + dir_x[i]
+        posy = y + dir_y[i]
         
-        if (0 <= x < n) and (0 <= y < m):
-            if vegetable_list[x][y] == 1:
-                vegetable_list[x][y] = 0
-                dfs(x, y, m, n, vegetable_list)
+        if (0 <= posx < n) and (0 <= posy < m):
+            if vegetable_list[posx][posy] == 1:
+                vegetable_list[posx][posy] = 0
+                dfs(posx, posy, m, n, vegetable_list)
 
 if __name__ == "__main__":
     solve()

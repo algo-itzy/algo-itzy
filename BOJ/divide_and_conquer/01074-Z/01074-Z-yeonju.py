@@ -4,7 +4,7 @@
 n, r, c = map(int, input().split())
 
 num = 0
-
+# 지웅님이랑 동일한 풀이.
 while n > 1:
     # 4등분 중 몇번째인가
     ran = 2 ** (n - 1)

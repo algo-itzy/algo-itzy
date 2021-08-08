@@ -5,6 +5,7 @@ import sys
 n, r, c = map(int, sys.stdin.readline().split())
 ans = 0
 
+# 반복문. 좌표 위치에 따라 n을 1까지 축소시키며 연산. 
 while n >= 1:
     quad = (2 ** n) // 2
     if n > 1:

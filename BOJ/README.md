@@ -1,11 +1,11 @@
 ```
 BOJ
-├──0-1_bfs(너비 우선 탐색)	
 ├──arbitrary_precision / big integers (임의 정밀도 / 큰 수 연산)	
 ├──area_of_a_polygon (다각형의 넓이)	
 ├──arithmetic (사칙연산)	
 ├──backtracking (백트래킹)	
-├──bellman–ford (벨만–포드)	
+├──bellman–ford (벨만–포드)
+├──bfs(너비 우선 탐색)
 ├──binary_search (이분 탐색)	
 ├──bfs (너비 우선 탐색)	
 ├──bruteforcing (브루트포스 알고리즘)	

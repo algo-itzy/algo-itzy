@@ -7,7 +7,6 @@ BOJ
 ├──bellman–ford (벨만–포드)
 ├──bfs(너비 우선 탐색)
 ├──binary_search (이분 탐색)	
-├──bfs (너비 우선 탐색)	
 ├──bruteforcing (브루트포스 알고리즘)	
 ├──combinatorics (조합론)	
 ├──data_structure (자료 구조)	

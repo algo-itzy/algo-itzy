@@ -43,7 +43,9 @@
 
 - 코드마다 주석 달기
 - 변수와 함수 이름은 어떤 역할을 하는지 알 수 있도록 붙이기
-
+- 파일명은 `문제번호-문제_이름-작성자.py`
+    - 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_` (underbar)
+    - 예시 : `10094-에라스토스의_체-kimssafy.py`
 
 
 <br>
@@ -55,7 +57,6 @@
   - 문제별, 타입별로 commit을 분리해서 작성합니다.
 - 제목 첫 글자는 `대문자`
   - ex: `fix: Change input() to readline()`
-- 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_` (underbar)
 
 ```
 - code  : 코드를 제출할 때
@@ -66,7 +67,6 @@
 
 --------------------------------------------------------------------------
 
-$ git add 10094-에라스토스의_체-kimssafy.py
 $ git commit -m "code: Solve 문제플랫폼 문제번호 문제이름 (작성자)"
 $ git commit -m "fix: 뭐했는지 (작성자)"
 
@@ -88,7 +88,6 @@ $ git commit -m "fix: Change input() to readline()"
 ```
 ss6-algorithm-study/algo-itzy
 ├──BOJ
-│   ├──0-1_bfs(너비 우선 탐색)	
 │   ├──arbitrary_precision / big integers (임의 정밀도 / 큰 수 연산)	
 │   ├──area_of_a_polygon (다각형의 넓이)	
 │   ├──arithmetic (사칙연산)	

@@ -88,7 +88,6 @@ $ git commit -m "fix: Change input() to readline()"
 ```
 ss6-algorithm-study/algo-itzy
 ├──BOJ
-│   ├──0-1_bfs(너비 우선 탐색)	
 │   ├──arbitrary_precision / big integers (임의 정밀도 / 큰 수 연산)	
 │   ├──area_of_a_polygon (다각형의 넓이)	
 │   ├──arithmetic (사칙연산)	

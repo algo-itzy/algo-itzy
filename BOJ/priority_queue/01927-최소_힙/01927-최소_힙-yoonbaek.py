@@ -29,7 +29,7 @@ class MinHeap:
         self.swap(0, last_index)
         min_val = self.queue.pop()
         self.minHeapify(0)
-        print("!!!", min_val)
+
         return min_val
 
     def parent(self, index):
@@ -43,9 +43,9 @@ class MinHeap:
         right_index = self.rightchild(i)
 
         min_index = i
-        if left_index >=len(self.queue)-1 and self.queue[min_index] > self.queue[left_index]:
+        if left_index <= len(self.queue)-1 and self.queue[min_index] > self.queue[left_index]:
             min_index = left_index
-        if right_index >=len(self.queue)-1 and self.queue[min_index] > self.queue[right_index]:
+        if right_index <= len(self.queue)-1 and self.queue[min_index] > self.queue[right_index]:
             min_index = right_index
 
         # if not min

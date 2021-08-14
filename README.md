@@ -5,7 +5,7 @@
 ## 📋 스터디 계획
 
 - **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/hing9u), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무), [한승주](https://github.com/chaselover)
-- **문제 수준** : solved.ac - 문제 - CLASS에서 모임 때마다 다음 문제 선정
+- **문제 수준** : solved.ac - 문제 - CLASS에서 모임 때마다 다음 문제 선정 / 필요시 SWEA 문제 선정
 
 - **모임 요일 및 시간** : 목요일 20시 / 일요일 12시 (2시간 / 유동적)
     - 파트 별 담당자 선정, 담당자가 파트 내 모든 코드 리뷰

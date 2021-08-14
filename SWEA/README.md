@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/87457066/129437923-d430d210-1d61-4a2e-9e61-4725e63bde41.png)
+
 ```
 SWEA
 ├──linked_list (연결리스트)

@@ -1,4 +1,6 @@
+<div align="center">
 ![image](https://user-images.githubusercontent.com/87457066/129437817-3cc781e2-f19b-416c-89b1-89b72323e287.png)
+</div>
 
 ```
 BOJ

@@ -16,3 +16,4 @@ if __name__ == "__main__":
             stack.append(char)
 
         print(f"#{tc} {len(stack)}")
+

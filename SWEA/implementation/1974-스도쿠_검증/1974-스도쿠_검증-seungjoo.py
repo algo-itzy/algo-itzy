@@ -38,9 +38,9 @@ def check_sudoku(s):
             return 0
     else:
         return 1 if check(8,8,s) else 0
-            
+
 
 
 for test in range(1,int(input())+1):
     sudoku = [list(map(int,input().split())) for _ in range(9)]
-    print(f'#{test} {check_sudoku(sudoku)}')
+    print(f'#{test} {check_sudoku(sudoku)}') 

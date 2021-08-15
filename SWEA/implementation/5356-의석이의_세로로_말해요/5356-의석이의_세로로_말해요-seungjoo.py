@@ -1,4 +1,3 @@
-
 def read_vertical(s):
     answer = ''
     cnt = 0

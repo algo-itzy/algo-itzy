@@ -6,18 +6,16 @@ def get_puzzle():
 
 
 def check(puzzle_part):
-    criterion = set(range(1, 10))
     return criterion == set(puzzle_part)
-
 
 def check_game(puzzle):
     # 1: row
     for row in range(9):
         if not check(puzzle[row]):
-            return 0
+            return 0 
     # 2: col
     for col in zip(*puzzle):
-        if not check(list(col)):
+        if not check(col):
             return 0
     # 3: 3 by 3 box
     box_idx = [0, 3, 6]
@@ -34,7 +32,8 @@ def check_game(puzzle):
 
 if __name__ == "__main__":
     T = int(input())
-    
+    criterion = set(range(1, 10))
+
     for tc in range(1, T+1):
         puzzle = get_puzzle()
 

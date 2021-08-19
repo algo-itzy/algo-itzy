@@ -8,7 +8,7 @@ path = './linked_list/' + problem
 readme = '# L5018 숫자 추가\n파이썬 SW문제해결 기본 - Linked list'
 
 """
-요소 간 구분은 - (hyphen), 요소 내 구분은 _ (underbar) 지켜서 입력해주세요.
+요소 간 구분은 - (hyphen), 요소 내 공백은 _ (underbar) 지켜서 입력해주세요.
 예시 ) linked_list/L5018-숫자_추가
 """
 

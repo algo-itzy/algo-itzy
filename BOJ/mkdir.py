@@ -27,6 +27,6 @@ for member in members:
 
 # README 생성
 md_path = os.path.join(path, 'README.md')
-md_fid = open(md_path, 'w')
+md_fid = open(md_path, 'w', encoding='utf8')
 md_fid.write(readme)
 md_fid.close()

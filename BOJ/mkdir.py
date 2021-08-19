@@ -8,7 +8,7 @@ path = './bfs/' + problem
 readme = '# 7576 토마토\nhttps://www.acmicpc.net/problem/7576'
 
 """
-요소 간 구분은 - (hyphen), 요소 내 구분은 _ (underbar) 지켜서 입력해주세요.
+요소 간 구분은 - (hyphen), 요소 내 공백은 _ (underbar) 지켜서 입력해주세요.
 boj 문제 중 문제번호가 4자리인 경우 앞에 0을 붙여주세요.
 
 예시 ) bfs/07576-토마토

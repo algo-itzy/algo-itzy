@@ -10,6 +10,7 @@ def count_bus(n):
     for i  in range(P):
         qa_set.append(bus_stops[int(input())-1])
     return qa_set
+    
 for test in range(1, int(input())+1):
     N = int(input())
     answer = count_bus(N)

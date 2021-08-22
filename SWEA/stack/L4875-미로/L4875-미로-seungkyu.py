@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('sample2.txt')
+sys.stdin = open('input.txt')
 
 def mase(x, y):  # DFS
     global ans  # 답 저장
@@ -11,7 +11,7 @@ def mase(x, y):  # DFS
         next_x = x + dx[i]
         next_y = y + dy[i]
 
-        if 0<=next_x<N and 0<=next_y<N:  # 범위 벗어나지 않을 때 0인지 3인지 확인
+        if 0<=next_x<N and 0<=next_y<N:  # 범위 벗어나지 않을 때 0인지 3인지
             if matrix[next_x][next_y] == 0 and not visited[next_x][next_y]:
                 mase(next_x, next_y)
                 

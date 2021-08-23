@@ -3,9 +3,9 @@ import os
 # ----------------------------------------------------------------------------------
 # 풀 문제 카테고리, 문제번호, 문제명 입력
 
-problem = 'L5018-숫자_추가'
-path = './linked_list/' + problem
-readme = '# L5018 숫자 추가\n파이썬 SW문제해결 기본 - Linked list'
+problem = 'L5178-노드의_합'
+path = './tree/' + problem
+readme = '# L5178 노드의 합\n파이썬 SW문제해결 기본 - Tree'
 
 """
 요소 간 구분은 - (hyphen), 요소 내 공백은 _ (underbar) 지켜서 입력해주세요.

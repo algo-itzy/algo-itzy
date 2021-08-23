@@ -11,9 +11,7 @@ def bfs():
 
     while q:
         x, y = q.popleft()
-
         arr[y][x] = 1
-
         for d in D:
             nx, ny = x+d[0], y+d[1]
 

@@ -1,1 +1,11 @@
-# git commit -m "Solve boj 11279 최대 힙 (seungjoo)"
+import sys
+input = sys.stdin.readline
+from heapq import heappush,heappop
+
+queue = []
+for _ in range(int(input())):
+    x = int(input())
+    if not x:
+        print(heappop(queue)[1] if queue else 0)
+    else:
+        heappush(queue,(-x,x))

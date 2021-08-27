@@ -1,1 +1,1 @@
-# delete this and solve here
+# git commit -m "Solve boj 11723 집합 (seungjoo)"

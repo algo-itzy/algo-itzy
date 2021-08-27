@@ -1,2 +1,2 @@
-# 7662 이중_우선순위_큐
-https://www.acmicpc.net/problem/7662
+# 7662 이중 우선순위 큐
+https://www.acmicpc.net/problem/07662

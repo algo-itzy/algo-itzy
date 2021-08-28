@@ -32,7 +32,7 @@ for data in datas:
         for member in members:
             filepath = os.path.join(path, f'{problem}-{member}.py')
             fid = open(filepath, 'w', encoding='utf8')
-            fid.write(f'# git commit -m "Solve boj {num} {title} ({member})"')
+            fid.write(f'# git commit -m "code: Solve boj {num} {title} ({member})"')
             fid.close()
 
         # README 생성

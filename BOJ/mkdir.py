@@ -24,25 +24,24 @@ for data in datas:
 # ----------------------------------------------------------------------------------
 
     # 디렉토리 생성
-    try:
-        if not os.path.exists(path):
-            os.makedirs(path)
-    except OSError:
-        print('이미 존재하는 디렉토리입니다.')
+    if not os.path.exists(path):
+        os.makedirs(path)
+        # 개별 파일 생성
+        members = ['jiwoong', 'seokzin', 'seungjoo', 'seungkyu', 'yeonhee', 'yeonju', 'yoonbaek']
 
-    # 개별 파일 생성
-    members = ['jiwoong', 'seokzin', 'seungjoo', 'seungkyu', 'yeonhee', 'yeonju', 'yoonbaek']
+        for member in members:
+            filepath = os.path.join(path, f'{problem}-{member}.py')
+            fid = open(filepath, 'w', encoding='utf8')
+            fid.write(f'# git commit -m "Solve boj {num} {title} ({member})"')
+            fid.close()
 
-    for member in members:
-        filepath = os.path.join(path, f'{problem}-{member}.py')
-        fid = open(filepath, 'w', encoding='utf8')
-        fid.write(f'# git commit -m "Solve boj {num} {title} ({member})"')
-        fid.close()
+        # README 생성
+        md_path = os.path.join(path, 'README.md')
+        md_fid = open(md_path, 'w', encoding='utf8')
+        md_fid.write(readme)
+        md_fid.close()
 
-    # README 생성
-    md_path = os.path.join(path, 'README.md')
-    md_fid = open(md_path, 'w', encoding='utf8')
-    md_fid.write(readme)
-    md_fid.close()
+        print(f'{num} 디렉토리 생성 끝!')
 
-print('디렉토리 생성 끝!')
+    else:
+        print(f'{num} 이미 존재하는 디렉토리입니다.')

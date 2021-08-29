@@ -38,9 +38,9 @@ if __name__ == "__main__":
                         heappop(max_heap)
                 else: # case min heap pop
                     # sync with max heap
-                    while max_heap and not count[min_heap[0]]:
+                    while min_heap and not count[min_heap[0]]:
                         heappop(min_heap)
-                    if max_heap:
+                    if min_heap:
                         count[min_heap[0]] -= 1
                         heappop(min_heap)
 

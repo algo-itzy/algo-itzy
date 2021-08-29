@@ -1,50 +1,52 @@
+'''
+못 풀었습니다.. 추후에 다시 풀어서 업로드하겠습니다
+'''
 import heapq
 import sys
 input = sys.stdin.readline
 
 min_heap, max_heap = [], []
-T = int(input())
 for _ in range(T):
     k = int(input())
-
     # 최소, 최대 힙 2개 사용
-    cnt = len_heap = 0
-    is_exist = {}
-    for _ in range(k):
+    min_heap, max_heap = [], []
+    
+    # 동시 삭제 위한 visited
+    visited = [False] * 1000001
+    # is_exist = {} 딕셔너리 이용해보려고 했으나 잘 안됨
+    for i in range(k):
         cmd = input().split()
 
         if cmd[0] == 'I':
-            heapq.heappush(min_heap, int(cmd[1]))
-            if int(cmd[1]) not in is_exist:
-                is_exist[int(cmd[1])] = 1
-            else:
-                is_exist[int(cmd[1])] += 1
-            heapq.heappush(max_heap, -int(cmd[1]))
-            cnt += 1
-        elif cmd[0] == 'D' and cnt:
+            heapq.heappush(min_heap, (int(cmd[1]), i))
+            heapq.heappush(max_heap, (-int(cmd[1]), i))
+            visited[i] = True
+
+        elif cmd[0] == 'D':
             if cmd[1] == '1':
-                while max_heap:
-                    num = -heapq.heappop(max_heap)
-                    if is_exist[num] == 1:
-                        cnt -= 1
-                        is_exist[num] -= 1
-                        break
+                
+                while max_heap and not visited[max_heap[0][1]]:
+                    heapq.heappop(max_heap)
+                # max heap에서도 동시에 삭제
+                if max_heap:
+                    visited[max_heap[0][1]] = False
+                    heapq.heappop(max_heap)
+
             elif cmd[1] == '-1':
-                while min_heap:
-                    num = heapq.heappop(min_heap)
-                    if is_exist[num] == 1:
-                        cnt -= 1
-                        is_exist[num] -= 1
-                        break
-    print(min_heap, max_heap)
-    print(is_exist)
-    if cnt == 1:
-        while min_heap:
-            ans = heapq.heappop(min_heap)
-            if ans in is_exist:
-                print(ans, ans)
-                break
-    elif cnt > 1:
-        print(-heapq.heappop(max_heap), heapq.heappop(min_heap))
+                
+                while min_heap and not visited[min_heap[0][1]]:
+                    heapq.heappop(min_heap)
+                # min heap에서도 동시에 삭제
+                if min_heap:
+                    visited[min_heap[0][1]] = False
+                    heapq.heappop(min_heap)
+
+    while min_heap and not visited[min_heap[0][1]]:
+        heapq.heappop(min_heap)
+    while max_heap and not visited[max_heap[0][1]]:
+        heapq.heappop(max_heap)
+        
+    if len(max_heap) == 0:
+        print("EMPTY")
     else:
-        print('EMPTY')
+        print(-max_heap[0][0], min_heap[0][0], sep=' ')

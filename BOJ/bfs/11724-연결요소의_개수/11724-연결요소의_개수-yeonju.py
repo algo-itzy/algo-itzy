@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 11724 연결요소의 개수 (yeonju)"

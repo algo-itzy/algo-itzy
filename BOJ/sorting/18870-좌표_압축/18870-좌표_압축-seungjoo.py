@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 18870 좌표 압축 (seungjoo)"

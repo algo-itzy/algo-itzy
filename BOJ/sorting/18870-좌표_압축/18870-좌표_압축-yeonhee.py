@@ -1,1 +1,5 @@
-# git commit -m "code: Solve boj 18870 좌표 압축 (yeonhee)"
+n = int(input())
+x = list(map(int, input().split()))
+x1 = sorted(list(set(x)))
+r = {x1[i]: i for i in range(len(x1))}
+print(*[r[i] for i in x])

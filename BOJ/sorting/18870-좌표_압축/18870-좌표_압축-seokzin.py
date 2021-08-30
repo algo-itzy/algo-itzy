@@ -1,13 +1,13 @@
 n = int(input())
 
-li = list(map(int, input().split()))
+rank = {}  # 요소-순위 쌍을 담음
+arr = list((map(int, input().split())))
+arr_sort = sorted(list(set(arr)))
 
-li2 = sorted(set(li))
+for i in range(len(arr_sort)):
+    rank[arr_sort[i]] = i
 
-dic = {li2[i] : i for i in range(len(li2))}
-# dic = { val: idx for idx, val in enumerate(li2)}
+for x in arr:
+    print(rank[x], end=' ')
 
-for i in li:
-    print(dic[i], end= " ")
-
-# enumerate로 인덱스 붙이기 가능 - 튜플로 생성됨. 다만 위보다 좀 느림
+# 요소들의 순위를 출력해야 함. 근데 정렬하면 인덱스가 곧 순위가 됨.

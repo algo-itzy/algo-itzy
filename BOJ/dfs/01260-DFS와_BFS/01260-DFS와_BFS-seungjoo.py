@@ -1,4 +1,3 @@
-# git commit -m "code: Solve boj 01260 DFS와 BFS (seungjoo)"
 import sys
 input = sys.stdin.readline
 from collections import defaultdict

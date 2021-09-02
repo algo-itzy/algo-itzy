@@ -15,8 +15,9 @@ if __name__ == "__main__":
     worst = abs(target_channel-100)
     minimum = worst
 
-    scope = range(2*10**length) # 타깃과 1로 시작하는 그 다음자리 수까지 비교하기 위함
-    for num in scope:
+    scope = 2*10**length
+    scope = scope if scope < 1000000 else 1000000
+    for num in range(scope):
         digits = str(num)
         for digit in digits:
             if digit in broken_buttons:

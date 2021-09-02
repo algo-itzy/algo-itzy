@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 02667 단지번호붙이기 (seokzin)"

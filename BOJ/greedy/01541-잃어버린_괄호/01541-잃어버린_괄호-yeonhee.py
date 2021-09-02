@@ -1,1 +1,7 @@
-# git commit -m "code: Solve boj 01541 잃어버린 괄호 (yeonhee)"
+expr = input().split('-')
+result = sum(map(int, expr[0].split('+')))
+
+for exp in expr[1:]:
+    result -= sum(map(int, exp.split('+')))
+
+print(result)

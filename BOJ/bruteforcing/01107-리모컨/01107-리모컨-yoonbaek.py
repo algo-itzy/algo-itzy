@@ -2,13 +2,15 @@
 # 도르마무를 해야하는 문제
 # 자꾸 EOF로 틀리네요.... 테케 모두 통과되면 수정하겠습니다.
 
-
 if __name__ == "__main__":
     target_channel = input()
     length = len(target_channel)
+    target_channel = int(target_channel)
 
     broken_num = int(input())
-    broken_buttons = list(input().split())
+    broken_buttons = []
+    if broken_num:
+        broken_buttons = input().split()
 
     worst = abs(target_channel-100)
     minimum = worst

@@ -1,1 +1,2 @@
-# git commit -m "code: Solve boj 01676 팩토리얼 0의 개수 (seungjoo)"
+N = int(input())
+print(N//5 + N//25 + N//125)

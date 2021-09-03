@@ -1,1 +1,5 @@
-# git commit -m "code: Solve boj 01676 팩토리얼 0의 개수 (seokzin)"
+n = int(input())
+print(n//5 + n//25 + n//125)
+
+# 사실 비슷한 생각은 했었음. 5의 개수가 0을 결정한다는 것
+# 근데 n 범위가 작다보니 이런 숏코딩도 가능한 걸 알았음

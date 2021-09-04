@@ -4,19 +4,18 @@ DIRECTION = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
 def bfs(a, b):
-    n = len(graph)
-    queue = deque([(a, b)])
+    q = deque([(a, b)])
     graph[a][b] = 0
     cnt = 1
 
-    while queue:
-        r, c = queue.popleft()
+    while q:
+        r, c = q.popleft()
         for dr, dc in DIRECTION:
             nr = r + dr
             nc = c + dc
             if 0 <= nr < n and 0 <= nc < n and graph[nr][nc]:
                 graph[nr][nc] = 0
-                queue.append((nr, nc))
+                q.append((nr, nc))
                 cnt += 1
     return cnt
 

@@ -1,1 +1,0 @@
-# primality test (소수 판정)

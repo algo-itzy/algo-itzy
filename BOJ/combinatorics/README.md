@@ -1,1 +1,0 @@
-# combinatorics (조합론)

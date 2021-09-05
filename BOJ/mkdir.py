@@ -3,12 +3,19 @@ import os
 # ----------------------------------------------------------------------------------
 print('------------------------------------------------------------')
 print('노션 테이블의 [문제번호][문제 이름][알고리즘 분류]를 복붙해주세요')
+print('다 붙여 넣었으면 ENTER 눌러주세요.')
 print('------------------------------------------------------------')
 
 datas = []
 
-for _ in range(7):  # 7문제로 고정했습니다. 추후 리팩토링
-    datas.append(input().split())
+while True:
+    data = input().split()
+
+    if data:
+        datas.append(data)
+    else:
+        input('디렉토리 생성하겠어요? (ENTER)')
+        break
 
 for data in datas:
     num = data.pop(0).zfill(5)

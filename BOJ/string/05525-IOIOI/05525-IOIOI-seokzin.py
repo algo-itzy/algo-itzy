@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 05525 IOIOI (seokzin)"

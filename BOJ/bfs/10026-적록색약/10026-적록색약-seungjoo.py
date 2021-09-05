@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 10026 적록색약 (seungjoo)"

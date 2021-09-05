@@ -1,1 +1,10 @@
-# git commit -m "code: Solve boj 01676 팩토리얼 0의 개수 (yeonhee)"
+from math import factorial
+
+n = factorial(int(input()))
+cnt = 0
+
+while not n%10:
+    n = n//10
+    cnt += 1
+
+print(cnt)

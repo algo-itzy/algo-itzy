@@ -1,1 +1,8 @@
-# git commit -m "code: Solve boj 09461 파도반 수열 (yeonhee)"
+dp = [0, 1, 1, 1]
+
+for i in range(4, 101):
+    dp += [dp[i-3] + dp[i-2]]
+
+for _ in range(int(input())):
+    n = int(input())
+    print(dp[n])

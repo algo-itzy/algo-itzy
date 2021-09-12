@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 11659 구간 합 구하기 4 (seokzin)"

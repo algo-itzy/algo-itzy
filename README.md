@@ -34,7 +34,7 @@
     </td>
     <td align="center" width="150px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=baekyoon" />
-      <a href="https://github.com/YoonBaek/">YoonBaek</a>
+      <a href="https://github.com/YoonBaek/">yoonbaek</a>
     </td>
     <td align="center" width="150px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=seokzin" />
@@ -50,11 +50,11 @@
     </td>
     <td align="center" width="150px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=hing9u" />
-      <a href="https://github.com/devpla/">devpla</a>
+      <a href="https://github.com/devpla/">yeonhee</a>
     </td>
     <td align="center" width="150px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=wannabe" />
-      <a href="https://github.com/chaselover/">chaselover</a>
+      <a href="https://github.com/chaselover/">seoungjoo</a>
     </td>
   </tr>
 </table>

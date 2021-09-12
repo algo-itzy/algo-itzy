@@ -4,61 +4,62 @@
 
 ## 👨‍💻 멤버 소개
 <table>
-  <tr height="150px">
-    <td align="center" width="150px">
+  <tr height="140px">
+    <td align="center" width="130px">
       <a href="https://github.com/ed-kyu"><img src="https://avatars.githubusercontent.com/u/76573337?v=4"/></a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <a href="https://github.com/YoonBaek/"><img src="https://avatars.githubusercontent.com/u/69225659?v=4"/></a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <a href="https://github.com/seokzin/"><img src="https://avatars.githubusercontent.com/u/43740455?v=4"/></a>
     </td>
-     <td align="center" width="150px">
+     <td align="center" width="130px">
       <a href="https://github.com/Julia-we-s2"><img src="https://avatars.githubusercontent.com/u/70363530?v=4"/></a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <a href="https://github.com/j2woong1"><img src="https://avatars.githubusercontent.com/u/25497798?v=4"/></a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <a href="https://github.com/devpla/"><img src="https://avatars.githubusercontent.com/u/87457066?v=4"/></a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <a href="https://github.com/chaselover/"><img src="https://avatars.githubusercontent.com/u/79824434?v=4"/></a>
     </td>
   </tr>
   <tr height="70px">
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=cppc03" />
       <a href="https://github.com/ed-kyu">seungkyu</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=baekyoon" />
       <a href="https://github.com/YoonBaek/">yoonbaek</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=seokzin" />
       <a href="https://github.com/seokzin/">seokzin</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=soultreeforgood" />
       <a href="https://github.com/Julia-we-s2">yeonju</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=j2woong1" />
       <a href="https://github.com/j2woong1">jiwoong</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=hing9u" />
       <a href="https://github.com/devpla/">yeonhee</a>
     </td>
-    <td align="center" width="150px">
+    <td align="center" width="130px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=wannabe" />
       <a href="https://github.com/chaselover/">seoungjoo</a>
     </td>
   </tr>
 </table>
 
+<br>
 
 ## 📋 스터디 계획
 

@@ -4,7 +4,7 @@
 
 ## 👨‍💻 멤버 소개
 <table>
-  <tr height="140px">
+  <tr height="130px">
     <td align="center" width="130px">
       <a href="https://github.com/ed-kyu"><img src="https://avatars.githubusercontent.com/u/76573337?v=4"/></a>
     </td>

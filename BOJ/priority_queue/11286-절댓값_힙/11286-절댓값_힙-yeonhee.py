@@ -1,1 +1,15 @@
-# git commit -m "code: Solve boj 11286 절댓값 힙 (yeonhee)"
+import sys
+import heapq
+
+input = sys.stdin.readline
+q = []
+
+for _ in range(int(input())):
+    num = int(input())
+    if num:
+        heapq.heappush(q, (abs(num), num))
+    else:
+        if not q:
+            print(0)
+        else:
+            print(heapq.heappop(q)[1])

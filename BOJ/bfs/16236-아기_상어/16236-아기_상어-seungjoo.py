@@ -4,6 +4,7 @@ input = sys.stdin.readline
 from collections import deque
 
 
+# 섭식. 위 왼쪽 첫번째 먹이.
 def eat_fish(fish, s, c):
     fish.sort()
     x, y = fish[0]
@@ -15,6 +16,7 @@ def eat_fish(fish, s, c):
     return (x, y, s, c)
 
 
+# 먹이 찾기
 def find_fish(start):
     global time
     x, y, size, cnt = start
@@ -40,6 +42,7 @@ def find_fish(start):
             return tmp, eat_fish(feed, size, cnt)
     return 0, 0
 
+# 먹이가 더 있는지 확인
 def call_mother(baby_size):
     for i in range(N):
         for j in range(N):
@@ -55,6 +58,7 @@ aquarium = []
 for i in range(N):
     fish = list(map(int, input().split()))
     aquarium.append(fish)
+    # 아기상어 위치 확인.
     if not baby_shark:
         for j in range(N):
             if fish[j]==9:
@@ -66,7 +70,6 @@ time = 0
 while call_mother(baby_shark[2]):
     t, baby_shark = find_fish(baby_shark)
     time += t
-    if not baby_shark:
-        break
+    if not baby_shark: break
 print(time)
 

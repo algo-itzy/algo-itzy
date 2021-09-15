@@ -4,6 +4,7 @@ input = sys.stdin.readline
 
 def dfs(x,y,depth,s,init_x,init_y):
     global max_sum
+    # 길이 4인 모든 도형을 조사.
     if depth==4:
         max_sum = max(max_sum,s)
         return
@@ -14,6 +15,7 @@ def dfs(x,y,depth,s,init_x,init_y):
             visited[nx][ny] = True
             dfs(nx,ny,depth+1,s+matrix[nx][ny],init_x,init_y)
             visited[nx][ny] = False
+            # ㅗ 모양 조사. 우랑 하 방향만 조사하면 됨.
             if nx==init_x+2 and ny==init_y:
                 if init_y-1>=0:
                     max_sum = max(s+matrix[nx][ny]+matrix[init_x+1][init_y-1],max_sum)

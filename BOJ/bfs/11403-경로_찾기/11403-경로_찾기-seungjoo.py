@@ -2,10 +2,11 @@
 import sys
 input = sys.stdin.readline
 
+# 길이있고 안들렀으면 들러서 표시해줌.
 def dfs(v):
-    for i in range(n):
-        if visited[i] == 0 and matrix[v][i] == 1:
-            visited[i] = 1
+    for u in range(n):
+        if not visited[u] and matrix[v][u] == 1:
+            visited[u] = 1
             dfs(i)
 
 n = int(input())

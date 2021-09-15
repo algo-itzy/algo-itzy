@@ -3,6 +3,7 @@ import sys
 input = sys.stdin.readline
 from collections import deque
 
+# 완전탐색.
 def bfs(n):
     q = deque()
     q.append((n,0))

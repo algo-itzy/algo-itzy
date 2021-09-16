@@ -1,1 +1,13 @@
-# git commit -m "code: Solve boj 17219 비밀번호 찾기 (jiwoong)"
+import sys
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+dic = {}
+
+for _ in range(n):
+    site, pw = input().split()
+    dic[site] = pw
+
+for _ in range(m):
+    print(dic[input().rstrip()])

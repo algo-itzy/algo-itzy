@@ -55,7 +55,7 @@
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=wannabe" />
-      <a href="https://github.com/chaselover/">seoungjoo</a>
+      <a href="https://github.com/chaselover/">seungjoo</a>
     </td>
   </tr>
 </table>

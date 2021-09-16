@@ -11,6 +11,6 @@ for i in range(n):
 for i in range(m):
     i, j = map(int, input().split())
 
-    print(n
+    print(nums_add[j]- nums_add[i-1])      # i~ j 까지 누적 합 = j 까지 누적 합 - (i-1)까지의 누적합
 
 # git commit -m "code: Solve boj 11659 구간 합 구하기 4 (yeonju)"

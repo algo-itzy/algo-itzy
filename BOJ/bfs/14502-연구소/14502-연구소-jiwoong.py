@@ -47,3 +47,5 @@ for i in range(N):
 
 virus(0, 0)
 print(ans)
+
+# git commit -m "code: Solve boj 14502 연구소 (jiwoong)"

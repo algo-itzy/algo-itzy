@@ -22,7 +22,7 @@ class Prime:
 
     def check_prime(self, x: int) -> None:
         # prime 여부 업데이트
-        for i in range(2, x//2+1):
+        for i in range(2, x**0.5+1):
             # prime이 0이면 false를 리턴하고 종료
             if not x%i:
                 return False

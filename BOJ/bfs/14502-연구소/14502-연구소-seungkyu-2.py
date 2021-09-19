@@ -1,4 +1,5 @@
 # git commit -m "code: Solve boj 14502 연구소 (seungkyu)"
+from itertools import combinations
 from collections import deque
 import sys
 input = sys.stdin.readline
@@ -37,27 +38,21 @@ def bfs():
 
 def choose_wall():
     ans = 0
+    candidates = []
     for i in range(N):
         for j in range(M):
-            if matrix[i][j] == 0:
-                for k in range(N):
-                    for l in range(M):
-                        if matrix[k][l] == 0:
-                            for m in range(N):
-                                for n in range(M):
-                                    if matrix[m][n] == 0:
-                                        if (i == k and j == l): continue
-                                        if (i == m and j == n): continue
-                                        if (k == m and l == n): continue
-                                    
-                                        matrix[i][j] = 1
-                                        matrix[k][l] = 1
-                                        matrix[m][n] = 1
-                                        cnt = bfs()
-                                        ans = max(ans, cnt)
-                                        matrix[i][j] = 0
-                                        matrix[k][l] = 0
-                                        matrix[m][n] = 0   
+            if not matrix[i][j]:  # 0
+                candidates.append((i,j))
+                walls_comb = combinations(candidates, 3)
+                for walls in walls_comb:
+                    for wall in walls:
+                        i, j = wall
+                        matrix[i][j] = 1
+                    cnt = bfs()
+                    for wall in walls:
+                        i, j = wall
+                        matrix[i][j] = 0
+                    ans = max(ans, cnt)
     return ans
 
 

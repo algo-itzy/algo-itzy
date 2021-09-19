@@ -1,8 +1,8 @@
-![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=Algo%-Itzy&desc=Algorithms%20Study%20Group!&fontSize=90&descAlign=57&descAlignY=70&&animation=twinkling)
+![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=Algo-Itzy&desc=Algorithms%20Study%20Group!&fontSize=90&descAlign=57&descAlignY=70&&animation=twinkling)
 
-<br>
+<br />
 
-## 👨‍💻 멤버 소개
+## 👨‍💻 Members
 
 <table>
   <tr height="125px">
@@ -15,7 +15,7 @@
     <td align="center" width="120px">
       <a href="https://github.com/seokzin/"><img src="https://avatars.githubusercontent.com/u/43740455?v=4"/></a>
     </td>
-     <td align="center" width="120px">
+    <td align="center" width="120px">
       <a href="https://github.com/Julia-we-s2"><img src="https://avatars.githubusercontent.com/u/77710182?v=4"/></a>
     </td>
     <td align="center" width="120px">
@@ -60,92 +60,90 @@
   </tr>
 </table>
 
-<br>
+<br />
 
-## 📋 스터디 계획
+## 📋 Plan
 
 <!-- - **인원** : [위연주](https://github.com/Julia-we-s2), [백승윤](https://github.com/YoonBaek), [채연희](https://github.com/devpla), [소석진](https://github.com/seokzin), [김승규](https://github.com/ed-kyu)(백준 그룹 관리), [정지웅](https://github.com/JiWoongJeong)(총무), [한승주](https://github.com/chaselover)
 - **문제 수준** : solved.ac - 문제 - CLASS에서 모임 때마다 다음 문제 선정 / 필요시 SWEA 문제 선정 -->
 
-- **모임 요일 및 시간** : 목요일 20시 / 일요일 12시 (2시간 / 유동적)
+### 1️⃣ 모임 시간
 
-  - 파트 별 담당자 선정, 담당자가 파트 내 모든 코드 리뷰
-  - 새로운 개념 (알고리즘) 등장 시 간단한 설명 추가 (시각적 자료가 있으면 👍)
+- 목요일 20시
+- 일요일 12시
 
-- **소통 채널**
-  - [**Discord**](https://discord.gg/CTNYwBW8) : 주 소통 채널
-  - [**Github**](https://github.com/ss6-algorithm-study/algo-itzy) : 코드 업로드 및 버전 관리
-  - [**BOJ 그룹**](https://www.acmicpc.net/group/11918) : 문제 리스트 제공 및 코드 제출 - 스코어보드 기록
-  - [**Notion**](https://www.notion.so/Algo-Itzy-ca5f3350ae5e42cdb487549170fa6f09) : 문제 리스트 정리 (카테고리 및 티어 참고) / 벌금 내역 관리
-  - **카카오톡** : 카카오페이 / 긴급 공지 및 연락
+<br />
 
-<br>
+### 2️⃣ 모임 방식
 
-### 🚀 코드 제출
+- PR을 통한 코드 리뷰
+- 핵심 아이디어 및 문법 소개 (시각적 자료 있으면 👍)
 
-- 코드 제출은 모임 **1시간 전**까지
+<br />
 
-  1. [BOJ 그룹](https://www.acmicpc.net/group/11918) - 연습 : **스코어보드 업데이트** ⭐
-  2. **저장소에 코드 업로드**
+### 3️⃣ 소통 채널
+
+- **Discord** : 주 소통 채널
+- [**Github**](https://github.com/ss6-algorithm-study/algo-itzy) : 코드 업로드 및 버전 관리
+- [**BOJ 그룹**](https://www.acmicpc.net/group/11918) : 제출 현황 조회
+- **Notion** : 문제 리스트 정리 / 벌금 내역 관리
+- **카카오톡** : 벌금 / 긴급 공지 및 연락
+
+<br />
+
+### 4️⃣ 코드 제출
+
+- 코드 제출은 스터디 **1시간 전**까지 [**Github**](https://github.com/ss6-algorithm-study/algo-itzy)에 PR
 
 - 문제를 못 풀었을 경우 😥
 
-  ```
-  - 문제 해석, 접근 방식, 해당 알고리즘 개념 등을 주석으로 최대한 적어서 업로드 (+ 어떤 부분이 어려웠는지..)
-  - 그리고 다음 스터디 전까지 다시 풀어서 올리기
+  - 문제 해석, 접근 방식, 개념 등을 **주석**으로 최대한 적어서 업로드
+  - 다음 스터디 전까지 다시 풀어서 올리기
+  - → 지키지 않을 시, 문제를 안 푼 것으로 간주하여 **벌금** 부과
 
-  → 지키지 않을 시, 문제를 안 푼 것으로 간주하여 벌금 부과합니다!
-  ```
+<br />
 
-<br>
+## 🤙 Convention
 
-## 📜 Convention
+### 1️⃣ Code Convention
 
-### 1. **Code Convention**
+- 주석 : 코드 설명보다는 아이디어 도출 과정 위주
+- 네이밍 : 변수, 함수명은 최대한 시멘틱하게 작성
+- 파일명 : `문제번호-문제_이름-작성자.py`
+  - 요소 간 구분 : `-` (hyphen)
+  - 요소 내 공백 : `_` (underbar)
+  - ex : `10094-에라스토스의_체-kimssafy.py`
 
-- 코드마다 주석 달기
-- 변수와 함수 이름은 어떤 역할을 하는지 알 수 있도록 붙이기
-- 파일명은 `문제번호-문제_이름-작성자.py`
-  - 요소 간 구분은 `-` (hyphen), 요소 내 공백은 `_` (underbar)
-  - 예시 : `10094-에라스토스의_체-kimssafy.py`
+<br />
 
-<br>
+### 2️⃣ Commit Convention
 
-### 2. **Commit Convention**
-
-- **commit 분리하기**
-  - 한번에 `git add .`를 지양합니다.
-  - 문제별, 타입별로 commit을 분리해서 작성합니다.
-- 제목 첫 글자는 `대문자`
-  - ex: `fix: Change input() to readline()`
+- `git add .` 지양. 한 문제 단위 커밋
+- 제목 첫 글자는 **대문자**
+  - ex : `fix: Change input() to readline()`
+- ⭐ push 전에 항상 **pull** 하여 충돌 방지
 
 ```
+# Type
 - code  : 코드를 제출할 때
-- fix   : 코드를 수정할 때 (틀린 문제를 맞게 만들었을 때)
-- docs  : README를 수정했을 때
-- refac : 맞은 문제를 개선했을 때
-- chore : 그 외 자잘한 수정(디렉토리 추가..)
+- fix   : 틀린 문제를 맞았을 때
+- docs  : README를 수정할 때
+- refac : 맞은 문제를 개선할 때
+- chore : 그 외 자잘한 수정(디렉토리 추가 등..)
 
---------------------------------------------------------------------------
-
-$ git commit -m "code: Solve 문제플랫폼 문제번호 문제이름 (작성자)"
-$ git commit -m "fix: 뭐했는지 (작성자)"
-
-(예시)
-$ git commit -m "code: Solve boj 10972 에라스토스의 체 (소석진)"
-$ git commit -m "fix: Change input() to readline()"
+# e.g
+"code: Solve boj 10972 에라토스테네스의 체 (seokzin)"
+"refac: Change input() to readline()"
 ```
 
-- 일단 각자 푸쉬 → ⭐ **push 전에 pull 필수!!!** ⭐
+<br />
 
-<br>
+### 3️⃣ Directory Structure
 
-### 3. Github 폴더
-
-![image](https://user-images.githubusercontent.com/87457066/128278963-21470384-3c70-450d-936c-5b3e34723f78.png)
+<!-- ![image](https://user-images.githubusercontent.com/87457066/128278963-21470384-3c70-450d-936c-5b3e34723f78.png) -->
 
 ```
-ss6-algorithm-study/algo-itzy
+algo-itzy
 ├──BOJ
 │   ├──arbitrary_precision / big integers (임의 정밀도 / 큰 수 연산)
 │   ├──area_of_a_polygon (다각형의 넓이)
@@ -196,13 +194,12 @@ ss6-algorithm-study/algo-itzy
 │   ├──two-pointer (투 포인터)
 │   └──value-coordinate_compression (값 / 좌표 압축)
 ├──SWEA
-├──Programmers
-└──README.md
+└──Programmers
 ```
 
 <br>
 
-## 🙆 **참가자들 알고리즘 경험도**
+<!-- ## 🙆 **참가자들 알고리즘 경험도**
 
 - [위연주](https://github.com/Julia-we-s2) : 프로그래머스 문제 유형별 1, 2 푸셨었음. 파이썬 잘 모름 열심히 할게요😭
 - [채연희](https://github.com/hing9u) : 백준 단계 초반 30제 + 해커랭크 easy ~ medium
@@ -212,19 +209,25 @@ ss6-algorithm-study/algo-itzy
 - [정지웅](https://github.com/JiWoongJeong) : 경험 없습니다 열심히 해볼게요
 - [한승주](https://github.com/chaselover) : 백준 플래티넘 ㄷㄷ
 
-<br>
+<br> -->
 
-## 💰 스터디 효율성을 위한 벌금
+## 💰 Penalty
 
-    ~~ 사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^_^ 돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다 ~~
+사채업자 아니에요 우리의 실력 향상을 위한 방침입니다 ^\_^  
+돈 많이내면 땡큐. 잦은 지각과 결석 바랍니다.
 
-- 스터디 결석 시 : 6,000원
-  - 사유 결석 : 누가 들어도 합당한 사유 — 면제
-- 스터디 정시 지각 시 : 4,000원
-- 문제 안 풀었을 시 (모임 1시간 전까지) : 한 문제 당 2,000원
+<br />
 
-<br>
+### 1️⃣ Penalty List
+
+- 스터디 결석 : 6,000원
+  - 사유 결석 : 누가 들어도 합당한 사유 → 면제
+- 스터디 지각 : 4,000원
+- 미제출 : 문제 당 2,000원
+
+<br />
+
+### 2️⃣ ETC
 
 - 벌금 사용처 : 코로나 잠잠해지면 오프라인 회식 때 **FLEX**
-- 총무에게 다음날 낮 12시 전까지 카카오 페이로 입금 (제 시간 내에 미입금 시 추가 1,000원)
-- 벌금 내역 : Notion에서 관리
+- 익일 낮 12시 전까지 총무에게 카카오 페이로 입금 (시간 내 미입금 → +1,000원)

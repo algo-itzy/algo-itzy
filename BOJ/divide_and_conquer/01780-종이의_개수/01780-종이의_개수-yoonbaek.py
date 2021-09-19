@@ -3,7 +3,7 @@ from sys import stdin
 # 일급함수
 read = stdin.readline
 
-# 쿼드트리로 압축할 만한 범위인지 판단
+# 색깔 동일한지 확인
 def is_color_same(start_x, start_y, end_x, end_y):
     start = paper[start_y][start_x]
 
@@ -12,10 +12,10 @@ def is_color_same(start_x, start_y, end_x, end_y):
             if paper[row][col] != start:
                 return False
 
-    # 파이썬에선 0이 False이므로 0이 안나오게 +1
+    # 색깔을 1,2,3으로 반환
     return start+2
 
-# 쿼드트리 구성
+# 시간이 없어서 쿼드트리 로직 그대로 썼습니다...
 def scissor(start_x, start_y, end_x, end_y):
     check = is_color_same(start_x, start_y, end_x, end_y)
     middle_x_1 = start_x+(end_x-start_x)//3
@@ -36,7 +36,7 @@ def scissor(start_x, start_y, end_x, end_y):
         scissor(middle_x_1, middle_y_2, middle_x_2, end_y) # 8
         scissor(middle_x_2, middle_y_2, end_x, end_y) # 9
     else:
-        # check에서 반환된 2와 1을 다시 1과 0으로 만들어 출력
+        # 리턴받은 색깔 인덱스 저장
         RGB[check-1] += 1
 
 

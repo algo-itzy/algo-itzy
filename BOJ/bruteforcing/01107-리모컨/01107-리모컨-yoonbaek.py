@@ -4,6 +4,7 @@
 
 if __name__ == "__main__":
     target_channel = input()
+
     length = len(target_channel)
     target_channel = int(target_channel)
 
@@ -17,6 +18,7 @@ if __name__ == "__main__":
 
     scope = 2*10**length
     scope = scope if scope < 1000000 else 1000000
+
     for num in range(scope):
         digits = str(num)
         for digit in digits:

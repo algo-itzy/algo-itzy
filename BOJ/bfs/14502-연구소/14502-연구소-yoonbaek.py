@@ -25,7 +25,7 @@ def spread(starts, lab):
 
 if __name__ == "__main__":
     N, M = rd()
-    lab = [rd() for _ in range(N)]
+    lab = [list(rd()) for _ in range(N)]
 
     starts, empties = [], []
     for row in range(N):
@@ -48,10 +48,11 @@ if __name__ == "__main__":
 
                 spread_cnt = spread(starts, lab)
 
-                lab[wall1[1]][wall1[0]] = 0
-                lab[wall2[1]][wall2[0]] = 0
-                lab[wall3[1]][wall3[0]] = 0
+                for empty in empties:
+                    lab[empty[1]][empty[0]] = 0
 
-                
+                safe_cnt = max(safe_cnt, len_empties - spread_cnt -3)
+
+    print(safe_cnt)
 
 # git commit -m "code: Solve boj 14502 연구소 (yoonbaek)"

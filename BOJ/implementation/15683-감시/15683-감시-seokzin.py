@@ -28,7 +28,7 @@ def fill(x, y, arr, D):
 def dfs(arr, step):
     global res
 
-    cpy = deepcopy(arr)
+    cpy = [row[:] for row in arr]
 
     if step == len(cctv):
         cnt = 0
@@ -45,7 +45,7 @@ def dfs(arr, step):
     for D in CCTV[idx]:
         fill(x, y, cpy, D)
         dfs(cpy, step+1)
-        cpy = deepcopy(arr)
+        cpy = [row[:] for row in arr]
 
 
 n, m = map(int, input().split())

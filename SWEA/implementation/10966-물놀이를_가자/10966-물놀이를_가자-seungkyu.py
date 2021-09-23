@@ -1,0 +1,1 @@
+# git commit -m "code: Solve swea 10966 물놀이를 가자 (seungkyu)"

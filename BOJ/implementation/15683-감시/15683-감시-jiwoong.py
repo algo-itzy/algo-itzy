@@ -1,4 +1,5 @@
-# git commit -m "code: Solve boj 15683 감시 (jiwoong)"import sys
+# git commit -m "code: Solve boj 15683 감시 (jiwoong)"
+import sys
 
 input = sys.stdin.readline
 

@@ -5,30 +5,29 @@ sys.stdin = open('input.txt')
 for test in range(1, int(input()) + 1):
     N, M = map(int, input().split())
     pool = [list(input()) for _ in range(N)]
-    dp_up_left = [[float('inf')] * M for _ in range(N)]
-    dp_down_right = [[float('inf')] * M for _ in range(N)]
+    dp = [[float('inf')] * M for _ in range(N)]
     answer = 0
     for i in range(N):
         for j in range(M):
             if pool[i][j] == 'W':
-                dp_down_right[i][j] = 0
+                dp[i][j] = 0
                 continue
             if j:
-                dp_down_right[i][j] = min(dp_down_right[i][j-1] + 1, dp_down_right[i][j])
+                dp[i][j] = min(dp[i][j-1] + 1, dp[i][j])
             if i:
-                dp_down_right[i][j] = min(dp_down_right[i-1][j] + 1, dp_down_right[i][j])
+                dp[i][j] = min(dp[i-1][j] + 1, dp[i][j])
 
     for i in range(N-1, -1, -1):
         for j in range(M-1, -1, -1):
             if pool[i][j] == 'W':
-                dp_down_right[i][j] = 0
+                dp[i][j] = 0
                 continue
             if not j == M - 1:
-                dp_down_right[i][j] = min(dp_down_right[i][j+1] + 1, dp_down_right[i][j])
+                dp[i][j] = min(dp[i][j+1] + 1, dp[i][j])
             if not i == N - 1:
-                dp_down_right[i][j] = min(dp_down_right[i+1][j] + 1, dp_down_right[i][j])
-            if dp_up_left[i][j] == float('inf') and dp_down_right[i][j] == float('inf'):
+                dp[i][j] = min(dp[i+1][j] + 1, dp[i][j])
+            if dp[i][j] == float('inf'):
                 continue
-            answer += min(dp_up_left[i][j], dp_down_right[i][j])
+            answer += dp[i][j]
 
     print(f'#{test} {answer}')

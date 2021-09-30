@@ -12,7 +12,7 @@ def is_triplet(val):
     if val == 3:
         return True
     return False
-    
+
 
 if __name__ == "__main__":
     T = int(input())
@@ -41,4 +41,6 @@ if __name__ == "__main__":
                 break
 
         print(f"#{tc} {res}")
+
+        
  # git commit -m "code: Solve swea L5203 베이비진 게임 (yoonbaek)"

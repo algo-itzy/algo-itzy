@@ -1,30 +1,29 @@
+def check():
+    total = 0                              # 옮겨진 화물 전체 무게
+    while truck and container:
+        if truck[-1] >= container[-1]:       # 컨테이너가 트럭에 담기면
+            tmp = container.pop()
+            total += tmp
+            truck.pop()
+
+        else:                              # 컨테이너가 트력에 안 담기면(컨테이너가 더 큰 경우)
+                                        # 트럭에 안 담기는 컨테이너는 버리기
+            container.pop()
+
+    return total
+
+
 t = int(input())
 
-
-def dfs(now, total):
-
-    global min_usage
-
-    if sum(visited) == n-1:             # 모든 구역 다 방문했으면
-        if total + arr[now][0] < min_usage:
-            min_usage = total + arr[now][0]
-            return
-
-    for next in range(1, n):            # 갈 수 있는 모든 경로 dfs 탐색
-        if visited[next] == 0:
-            visited[next] = 1
-            dfs(next, total + arr[now][next])
-            visited[next] = 0
-
-
 for tc in range(t):
-    n = int(input())
-    arr = [list(map(int, input().split())) for _ in range(n)]
-    visited = [0] * n                   # 방문 체크할 리스트 선언
-    min_usage = 100 * 10
-    dfs(0, 0)                           # 지금 위치, 현재까지 배터리 사용량
+    n, m = map(int, input().split())                # 컨테이너 수, 트럭 수
+    container = list(map(int, input().split()))
+    truck = list(map(int, input().split()))
 
-    print(f'#{tc+1} {min_usage}')
+    container = sorted(container)      # 오름차순 정렬 후 큰 순서대로 앞에 오도록 재배치
+    truck = sorted(truck)
+
+    print(f'#{tc+1} {check()}')
 
 
 # git commit -m "code: Solve swea L5201 컨테이너 운반 (yeonju)"

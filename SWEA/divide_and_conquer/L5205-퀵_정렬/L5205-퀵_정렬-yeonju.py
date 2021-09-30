@@ -1,0 +1,1 @@
+# git commit -m "code: Solve swea L5205 퀵 정렬 (yeonju)"

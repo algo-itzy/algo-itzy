@@ -11,10 +11,13 @@ def merge_sort(numbers):
     mid = len(numbers) // 2
     left = merge_sort(numbers[:mid])
     right = merge_sort(numbers[mid:])
+
     if left[-1] > right[-1]:
         cnt += 1
+
     tmp = []
     i, j = 0, 0
+    
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
             tmp.append(left[i])

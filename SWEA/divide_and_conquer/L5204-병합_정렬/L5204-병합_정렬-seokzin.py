@@ -11,32 +11,24 @@ def merge_sort(s):
 
 def merge(left, right):
     global cnt
-    tmp = [0] * (len(left) + len(right))
-    i, i_l, i_r = 0, 0, 0
+    tmp = []
+    i_l, i_r, n_l, n_r = 0, 0, len(left), len(right)
 
     if left[-1] > right[-1]:
         cnt += 1
 
-    while i_l < len(left) or i_r < len(right):
-        if i_l < len(left) and i_r < len(right):
-            if left[i_l] <= right[i_r]:
-                tmp[i] = left[i_l]
-                i += 1
-                i_l += 1
-            else:
-                tmp[i] = right[i_r]
-                i += 1
-                i_r += 1
-
-        elif i_l < len(left):
-            tmp[i] = left[i_l]
-            i += 1
+    while i_l != n_l and i_r != n_r:
+        if left[i_l] <= right[i_r]:
+            tmp.append(left[i_l])
             i_l += 1
-
-        elif right:
-            tmp[i] = right[i_r]
-            i += 1
+        else:
+            tmp.append(right[i_r])
             i_r += 1
+
+    if i_l == n_l:
+        tmp += right[i_r:]
+    elif i_r == n_r:
+        tmp += left[i_l:]
 
     return tmp
 
@@ -48,5 +40,5 @@ for tc in range(1, int(input())+1):
 
     print(f'#{tc}', merge_sort(arr)[n//2], cnt)
 
-# 임시 리스트에 append 개념이 이해는 쉬웠으나 시간 초과네요.
+# pop하여 임시 리스트에 append 개념이 이해는 쉬웠으나 시간 초과네요.
 # 인덱스 이동 개념으로 리팩토링 하였습니다.

@@ -35,5 +35,4 @@ for tc in range(t):
     quick_sort(0, len(a))
     print(f'#{tc+1} {a[n//2]}')
 
-
 # git commit -m "code: Solve swea L5205 퀵 정렬 (yeonju)"

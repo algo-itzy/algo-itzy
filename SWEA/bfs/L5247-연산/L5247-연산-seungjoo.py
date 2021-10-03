@@ -1,0 +1,1 @@
+# git commit -m "code: Solve swea L5247 연산 (seungjoo)"

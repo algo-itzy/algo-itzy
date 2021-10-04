@@ -8,7 +8,6 @@ def dfs(x, s, visit):
         res = s
         return
 
-
     for i in range(n):
         if not visit & (1<<i):
             dfs(x+1, s+arr[x][i], visit|(1<<i))

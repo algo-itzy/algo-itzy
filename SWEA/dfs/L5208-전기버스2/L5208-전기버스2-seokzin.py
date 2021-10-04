@@ -8,7 +8,6 @@ def dfs(x, cnt):
         res = cnt
         return
 
-
     for i in range(arr[x-1], 0, -1):  # 역탐색 중요
         dfs(x+i, cnt+1)
 

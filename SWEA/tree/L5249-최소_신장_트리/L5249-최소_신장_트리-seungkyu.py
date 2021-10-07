@@ -1,0 +1,1 @@
+# git commit -m "code: Solve swea L5249 최소 신장 트리 (seungkyu)"

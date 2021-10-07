@@ -24,18 +24,18 @@ def cal_dist(x, y):
 
 # 궁수 위치 브루트포싱
 def comb(nums, n):
-	ret = []
-	if n > len(nums): return ret
-	
-	if n == 1:
-		for i in nums:
-			ret.append([i])
-	elif n > 1:
-		for i in range(len(nums)-n+1):
-			for temp in comb(nums[i+1:], n-1):
-				ret.append([nums[i]] + temp)
+    ret = []
+    if n > len(nums): return ret
 
-	return ret
+    if n == 1:
+        for i in nums:
+            ret.append([i])
+    elif n > 1:
+        for i in range(len(nums)-n+1):
+            for temp in comb(nums[i+1:], n-1):
+                ret.append([nums[i]] + temp)
+
+    return ret
 
 N, M, D = map(int, input().split())
 matrix = [list(map(int, input().split())) for _ in range(N)]

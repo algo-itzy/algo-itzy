@@ -21,9 +21,9 @@ for tc in range(1, T+1):
         if not visited[idx]:
             visited[idx] = 1
         
-            for a, b in node[idx]:
-                if dist[a] > d + b:
-                    dist[a] = d + b
-                    heapq.heappush(q, (dist[a], a))
+            for node, node_dist in node[idx]:
+                if dist[node] > d + node_dist:
+                    dist[node] = d + node_dist
+                    heapq.heappush(q, (dist[node], node))
 
     print(f'#{tc} {dist[N]}')

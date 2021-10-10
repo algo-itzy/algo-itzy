@@ -31,31 +31,31 @@
   <tr height="70px">
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=cppc03" />
-      <a href="https://github.com/ed-kyu">seungkyu</a>
+      <a href="https://github.com/ed-kyu">승규</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=baekyoon" />
-      <a href="https://github.com/YoonBaek/">yoonbaek</a>
+      <a href="https://github.com/YoonBaek/">승윤</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=seokzin" />
-      <a href="https://github.com/seokzin/">seokzin</a>
+      <a href="https://github.com/seokzin/">석진</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=soultreeforgood" />
-      <a href="https://github.com/Julia-we-s2">yeonju</a>
+      <a href="https://github.com/Julia-we-s2">연주</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=j2woong1" />
-      <a href="https://github.com/j2woong1">jiwoong</a>
+      <a href="https://github.com/j2woong1">지웅</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=hing9u" />
-      <a href="https://github.com/devpla/">yeonhee</a>
+      <a href="https://github.com/devpla/">연희</a>
     </td>
     <td align="center" width="120px">
       <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=wannabe" />
-      <a href="https://github.com/chaselover/">seungjoo</a>
+      <a href="https://github.com/chaselover/">승주</a>
     </td>
   </tr>
 </table>

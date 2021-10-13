@@ -1,1 +1,1 @@
-# git commit -m "code: Solve Programmers 퍼즐 조각 채우기 (yoonbaek)"
+# git commit -m "code: Solve programmers 퍼즐 조각 채우기 (yoonbaek)"

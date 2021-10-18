@@ -2,7 +2,7 @@ import os
 
 # ----------------------------------------------------------------------------------
 print('------------------------------------------------------------')
-print('노션 테이블의 [문제 이름]를 복붙 후 ENTER 2번 눌러주세요.')
+print('노션 테이블의 [문제 이름]~[링크]를 복붙 후 ENTER 2번 눌러주세요.')
 print('------------------------------------------------------------')
 
 datas = []
@@ -17,12 +17,14 @@ while True:
         break
 
 for data in datas:
+    url = data.pop()
+    category = data.pop()
     title = ' '.join(data)
     title_bar = title.replace(' ', '_')
     problem = title_bar
 
-    path = f'./{problem}' 
-    readme = f'# {title}'
+    path = f'./{problem}'
+    readme = f'# {title}\n\n{url}'
 
 # ----------------------------------------------------------------------------------
 

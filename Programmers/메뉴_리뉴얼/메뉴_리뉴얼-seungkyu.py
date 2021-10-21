@@ -29,7 +29,7 @@ def solution(orders, course):
     answer = set()
 
     for num in course:
-        answer_list = []  # 조합 후보 모두 저장, 길이 고려 X
+        answer_list = []  # 조합 후보 모두 저장, 몇 명이 골랐는지는 나중에 고려
         combination = make_comb(orders, num)  # 조합 생성
 
         for comb in combination:

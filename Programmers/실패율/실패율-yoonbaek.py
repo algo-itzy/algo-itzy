@@ -19,9 +19,4 @@ def solution(N, stages):
 
     return answer
 
-if __name__ == "__main__":
-    # stages = [2, 1, 2, 6, 2, 4, 3, 3]
-    stages = [4, 4, 4, 4, 4]
-    solution(4, stages)
-
 # git commit -m "code: Solve programmers 실패율 (yoonbaek)"

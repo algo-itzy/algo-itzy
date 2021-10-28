@@ -17,7 +17,8 @@ def solution(relations):
     global combs
     N = len(relations[0])
     visited = [0] * N
-    table, candidates = {}, {}
+    table, candidates = set(), set()
+
 
     combs = []
     # 후보키 조합 구하기
@@ -34,9 +35,9 @@ def solution(relations):
             if key in table:
                 break
             else:
-                table[key] = ''
+                table.add(key)
         else:
-            candidates[comb] = ''
+            candidates.add(comb)
 
     # 후보 키 조합 중 최소성 만족 키 식별
     pop_set = set()
@@ -46,6 +47,7 @@ def solution(relations):
                 pop_set.add(second_key)
 
     for key in pop_set:
+        candidates.remove(key)
         candidates.pop(key)
     
     return len(candidates)

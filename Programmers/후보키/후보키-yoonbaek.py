@@ -19,6 +19,7 @@ def solution(relations):
     visited = [0] * N
     table, candidates = set(), set()
 
+
     combs = []
     # 후보키 조합 구하기
     for i in range(1, N+1):
@@ -47,6 +48,7 @@ def solution(relations):
 
     for key in pop_set:
         candidates.remove(key)
+        candidates.pop(key)
     
     return len(candidates)
 

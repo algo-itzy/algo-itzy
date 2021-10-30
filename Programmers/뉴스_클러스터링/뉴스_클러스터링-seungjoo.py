@@ -2,12 +2,11 @@
 def make_set(s):
     a = set()
     for i in range(len(s) - 1):
-        if not s[i].isalpha() or not s[i+1].isalpha():
-            continue
         now = s[i:i+2]
-        while now in a:
-            now += '1'
-        a.add(now)
+        if now.isalpha():
+            while now in a:
+                now += '1'
+            a.add(now)
     return a
 
 def solution(str1, str2):

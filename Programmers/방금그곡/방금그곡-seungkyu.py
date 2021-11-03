@@ -2,6 +2,7 @@
 def solution(m, musicinfos):
     answer = ''
     dic = {}
+
     for musicinfo in musicinfos:
         start, end, title, music = musicinfo.split(',')
         a, b = start.split(':')
@@ -9,6 +10,7 @@ def solution(m, musicinfos):
         
         tmp = []
         i = 0
+
         while i < len(music):
             if music[i].isalpha():
                 if i < len(music)-1 and music[i+1] == '#':
@@ -18,13 +20,12 @@ def solution(m, musicinfos):
                     tmp.append(music[i])
                     i += 1        
         time = (int(c) - int(a))*60 + (int(d) - int(b))
-        if time > len(tmp):
-            dic[title] = [time, (time//len(tmp))*tmp + tmp[:time%len(tmp)]]
-        else:
-            dic[title] = [time, tmp[:time]]
-        
+
+        dic[title] = [time, (time//len(tmp))*tmp + tmp[:time%len(tmp)]]
+
     ans = []
     len_m = 0
+
     for i in m:
         if i.isalpha():
             len_m += 1
@@ -36,8 +37,10 @@ def solution(m, musicinfos):
                 break
     
     ans = sorted(ans, key=lambda music: -music[1])
+
     if ans:
         answer = ans[0][0]
     else:
         answer = "(None)"
+
     return answer

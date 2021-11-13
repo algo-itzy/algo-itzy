@@ -1,4 +1,5 @@
 from collections import deque
+
 SIZE = 5
 MOVES = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
@@ -49,7 +50,7 @@ def solution(places):
     answers = []
     for place in places:
         starts = [Location(row, col, 0) for col in range(SIZE) for row in range(SIZE)]
-        starts = filter(lambda x: x.is_person(), starts)
+        starts = filter(lambda loc: loc.is_person(), starts)
 
         for start in starts:
             if not search(start):

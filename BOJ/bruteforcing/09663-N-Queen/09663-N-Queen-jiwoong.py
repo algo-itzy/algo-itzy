@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 09663 N-Queen (jiwoong)"

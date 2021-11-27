@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 15650 N과 M (2) (seungjoo)"

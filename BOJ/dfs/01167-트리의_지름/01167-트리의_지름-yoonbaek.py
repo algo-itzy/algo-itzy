@@ -1,1 +1,0 @@
-# git commit -m "code: Solve boj 01167 트리의 지름 (yoonbaek)"

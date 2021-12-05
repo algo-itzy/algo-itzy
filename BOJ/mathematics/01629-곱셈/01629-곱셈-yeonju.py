@@ -12,4 +12,3 @@ def power(a, n):
 a, b, c = map(int, input().split())
 print(power(a, b))
 
-# git commit -m "code: Solve boj 01629 곱셈 (yeonju)"

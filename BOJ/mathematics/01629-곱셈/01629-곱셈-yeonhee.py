@@ -1,1 +1,2 @@
-# git commit -m "code: Solve boj 01629 곱셈 (yeonhee)"
+a, b, c = map(int, input().split())
+print(pow(a, b, c))

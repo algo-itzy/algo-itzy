@@ -37,6 +37,8 @@ for data in datas:
 
         for member in members:
             filepath = os.path.join(path, f'{problem}-{member}.py')
+            if member == 'yoonbaek':
+                filepath = os.path.join(path, f'{problem}-{member}.go')
             fid = open(filepath, 'w', encoding='utf8')
             fid.write(f'# git commit -m "code: Solve boj {num} {title} ({member})"')
             fid.close()

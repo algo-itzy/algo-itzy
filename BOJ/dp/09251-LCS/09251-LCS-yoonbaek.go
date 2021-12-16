@@ -10,6 +10,7 @@ import (
 var (
 	sc            = bufio.NewScanner(os.Stdin)
 	first, second string
+	maxLen        int
 )
 
 func scan() string {
@@ -17,36 +18,37 @@ func scan() string {
 	return sc.Text()
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
+func max(nums ...int) (max int) {
+	for _, num := range nums {
+		if max < num {
+			max = num
+		}
 	}
-	return b
+	return
 }
 
-func LCS(i, j int, mem [][]int) {
-	if first[i] == second[j] {
-		mem[i+1][j+1] = mem[i][j] + 1
+func LCS(i, j int, memo []int) {
+	if maxLen < memo[j] {
+		maxLen = memo[j]
 		return
 	}
-	mem[i+1][j+1] = max(mem[i][j+1], mem[i+1][j])
+	if first[i] == second[j] {
+		memo[j] = maxLen + 1
+	}
 }
 
 func main() {
 	sc.Split(bufio.ScanLines)
 
 	first, second = scan(), scan()
-	F, S := len(first), len(second)
-	mem := make([][]int, F+1)
-	for row := range mem {
-		mem[row] = make([]int, S+1)
-	}
+	memo := make([]int, len(second))
 
 	for row := range first {
+		maxLen = 0
 		for col := range second {
-			LCS(row, col, mem)
+			LCS(row, col, memo)
 		}
 	}
 
-	fmt.Println(mem[F][S])
+	fmt.Println(max(memo...))
 }

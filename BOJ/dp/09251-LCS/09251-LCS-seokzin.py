@@ -1,1 +1,0 @@
-# git commit -m "code: Solve boj 09251 LCS (seokzin)"

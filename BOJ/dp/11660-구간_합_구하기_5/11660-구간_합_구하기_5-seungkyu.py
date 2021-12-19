@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 11660 구간 합 구하기 5 (seungkyu)"

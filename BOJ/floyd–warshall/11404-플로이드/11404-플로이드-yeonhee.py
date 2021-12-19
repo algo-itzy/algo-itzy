@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 n, m = int(input()), int(input())
-costs = [[100001]*n for _ in range(n)]
+costs = [[float('inf')]*n for _ in range(n)]
 
 for _ in range(m):
     s, e, cost = map(int, input().split())
@@ -16,7 +16,7 @@ for k in range(n):
 
 for i in range(n):
     for j in range(n):
-        if costs[i][j] == 100001:
+        if costs[i][j] == float('inf'):
             costs[i][i] = 0
 
 for row in costs:

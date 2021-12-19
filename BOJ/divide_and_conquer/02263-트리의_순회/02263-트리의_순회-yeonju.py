@@ -10,6 +10,7 @@ def search_preorder(in_left, in_right, post_left, post_right):
     root = postorder[post_right]
 
     root_idx = inorder_idx[root]
+    print('윽',root, inorder_idx[root])
     preorder.append(root)
     left_side = root_idx - in_left
 

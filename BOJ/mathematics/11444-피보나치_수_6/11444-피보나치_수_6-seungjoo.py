@@ -15,7 +15,7 @@ MOD = 1000000007
 base = [[1, 1], [1, 0]]
 answer = [[1, 0], [0, 1]]
 
-for i in range(1, len(n) + 1):
+for i in range(len(n)):
     if n[-i] == '1':
         answer = matrix_mult(answer, base)
     base = matrix_mult(base, base)

@@ -40,6 +40,10 @@ for data in datas:
                 filepath = os.path.join(path, f'{problem}-{member}.go')
                 fid = open(filepath, 'w', encoding='utf8')
                 fid.write(f'// git commit -m "code: Solve boj {num} {title} ({member})"')
+            elif member == 'seokzin':
+                filepath = os.path.join(path, f'{problem}-{member}.ts')
+                fid = open(filepath, 'w', encoding='utf8')
+                fid.write(f'// git commit -m "code: Solve boj {num} {title} ({member})"')
             else:
                 filepath = os.path.join(path, f'{problem}-{member}.py')
                 fid = open(filepath, 'w', encoding='utf8')

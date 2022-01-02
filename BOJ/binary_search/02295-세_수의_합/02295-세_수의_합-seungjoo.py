@@ -1,0 +1,1 @@
+# git commit -m "code: Solve boj 02295 세 수의 합 (seungjoo)"

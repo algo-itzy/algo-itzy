@@ -1,0 +1,1 @@
+// git commit -m "code: Solve boj 12100 2048 (Easy) (yoonbaek)"

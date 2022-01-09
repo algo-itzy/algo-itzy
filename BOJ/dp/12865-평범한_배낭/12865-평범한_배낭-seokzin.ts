@@ -1,1 +1,0 @@
-// git commit -m "code: Solve boj 12865 평범한 배낭 (seokzin)"

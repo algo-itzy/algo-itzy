@@ -1,4 +1,3 @@
-# git commit -m "code: Solve boj 20061 모노미노도미노2 (jiwoong)"
 from collections import deque
 import sys
 

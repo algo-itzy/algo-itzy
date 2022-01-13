@@ -15,5 +15,3 @@ for i in range(N):
     tmp -= nums[i]
 
 print(result)
-
-# git commit -m "code: Solve boj 02003 수들의 합 2 (yeonhee)"

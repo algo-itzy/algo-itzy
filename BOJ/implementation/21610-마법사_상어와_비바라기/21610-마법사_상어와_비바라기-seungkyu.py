@@ -1,10 +1,10 @@
 # git commit -m "code: Solve boj 21610 마법사 상어와 비바라기 (seungkyu)"
-from collections import deque
 import sys
 input = sys.stdin.readline
 
 delta = ((0, -1),(-1, -1),(-1, 0),(-1, 1),(0, 1),(1, 1),(1, 0),(1, -1))
 diagonal = ((-1, -1), (1, -1), (-1, 1), (1, 1))
+
 
 def cal_water(board):
     tot = 0
@@ -12,26 +12,29 @@ def cal_water(board):
         tot += sum(row)
     return tot
 
+
 def find_clouds(board, cmds):
     for i in range(M):
         if i == 0:
             clouds = [[N-1, 0],[N-1, 1],[N-2, 0],[N-2, 1]]
             new_clouds = move_clouds(cmds[i], clouds)
         else:
-            clouds = []
-            for j in range(N):
-                for k in range(N):
-                    if board[j][k] >= 2 and (j, k) not in new_clouds:
-                        board[j][k] -= 2
-                        clouds.append([j, k])
+            clouds = make_clouds(board, new_clouds)
             new_clouds = move_clouds(cmds[i], clouds)
         
         add_water(board, new_clouds)
 
+    make_clouds(board, new_clouds)
+
+
+def make_clouds(board, new_clouds):
+    clouds = []
     for j in range(N):
         for k in range(N):
             if board[j][k] >= 2 and (j, k) not in new_clouds:
                 board[j][k] -= 2
+                clouds.append([j, k])
+    return clouds
 
 
 def move_clouds(cmd, clouds):
